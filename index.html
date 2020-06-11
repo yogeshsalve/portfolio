@@ -94,7 +94,10 @@ body {
 </style>
 
 <script>
-var d = new Date();
-document.getElementById("demo").innerHTML = d;
+
+var today = new Date();
+
+var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear()+' '+today.getHours()+':'+today.getMinutes()+':'+today.getSeconds();
+document.getElementById("demo").innerHTML = date;
 </script>
 </html>
